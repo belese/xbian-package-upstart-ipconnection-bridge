@@ -1,0 +1,9 @@
+Origin: XBian
+Package: xbian-package-upstart-ipconnection-bridge
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: armhf
+Depends: upstart, python
+Maintainer: belese <besme2@gmail.com>
+Description: Bridge between ip connections in and upstart

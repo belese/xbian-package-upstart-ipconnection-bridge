@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ $1 == "configure" ]; then
+    if status xbian-ipconnection-bridge | grep -q "running"; then
+        # if config changed and xbian-xbmc-bridge was running, restart will not reread new configuration. according do doc, stop and start is needed
+        stop -q xbian-ipconnection-bridge
+        start -q xbian-ipconnection-bridge
+    fi
+fi

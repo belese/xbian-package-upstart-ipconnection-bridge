@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [ "$1" == "purge" ]; then
+    rm -f /var/log/upstart-ipconnection.log*
+fi

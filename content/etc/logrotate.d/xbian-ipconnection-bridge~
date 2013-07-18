@@ -1,0 +1,8 @@
+/var/log/upstart-xbmc-ipconnection.log {
+        daily
+        missingok
+        rotate 7
+        compress
+        notifempty
+	nocreate
+}

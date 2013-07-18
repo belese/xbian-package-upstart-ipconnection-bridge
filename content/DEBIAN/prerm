@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [ "$1" == "remove" ] || [ "$1" == "purge" ]; then
+    status -q xbian-ipconnection-bridge && stop -q xbian-ipconnection-bridge || exit 0
+fi
